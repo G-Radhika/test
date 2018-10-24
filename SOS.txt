@@ -7,7 +7,11 @@ do
     git commit --date=$"(`date --date="${i} day ago"`)" -am "Commit message number $i"
 done
 
+cd ~
+cd Documents/ANGULAR/projects/test
 
 
 Radhika@DESKTOP-BOLLE6L MINGW64 ~/Documents/ANGULAR/projects/test (master)
 $ for i in {1..2}; do     echo "$i" >> numbers;     git add -A;     git commit --date=$"(`date --date="${i+115} day ago"`)" -am "Commit message number $i"; done
+
+$ git push -u origin master
